@@ -1,0 +1,125 @@
+.block, .inline {
+  font-size: 1.5rem;
+}
+
+.line {
+  background-color: #333;
+  height: 5px;
+  margin: 50px 0;
+}
+
+/* ------------------------ */
+
+.content-1__block {
+  /* данное свойство уже прописано в reset.css */
+  /* box-sizing: border-box; */
+  /* width: 600px; */
+  background-color: #cbbbd6;
+  /* padding-top: 40px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 130px; */
+  /* верх + право + низ + лево: */
+  padding: 40px 70px 30px 130px;
+  /* верх-низ + лево-право: */
+  padding: 50px 100px;
+  /* верх + стороны + низ: */
+  padding: 50px 100px 75px;
+  /* марджины наслаиваются друг на друга */
+  margin: 50px 50px 100px 50px;
+}
+
+/* паддинги и марджины не используются для инлайн-элементов */
+/* .content-1__inline {
+  padding: 50px;
+  margin: 50px;
+} */
+
+/* однако с изображениями это прокатывает */
+.content-1__image {
+  /* padding: 50px; */
+  /* без указания ширины паддинг не меняет размер изображения,
+  а с указанием - меняет*/
+  /* width: 350px; */
+  margin: 50px;
+}
+
+.content-2__block-wrapper {
+  background-color: #999;
+  padding: 50px 50px 0px;
+}
+
+.content-2__block {
+  background-color: #ea8f8f;
+  margin-bottom: 50px;
+}
+
+/* стоит быть аккуратным со строгим указанием размеров элементов,
+потому что они могут наслоиться друг на друга */
+.content-3__block {
+  width: 200px;
+  height: 100px;
+  /* min-width: 300px;
+  max-width: 700px; */
+  /* min-height: 200px;
+  max-height: 350px; */
+  background-color: #7e7ef1;
+  /* значение по умолчанию - visible: */
+  overflow: scroll;
+  /* display: inline; */
+}
+
+.content-3__block-2 {
+  width: 300px;
+  height: 300px;
+  background-color: #a7ae6a;
+  /* при использовании свойства inline-block элементам
+  можно задавать все блочные свойства, но они перестают
+  занимать собой всю доступную ширину */
+  display: inline-block;
+}
+
+/* для инлайновых элементов эти параметры не алё
+... если не поставить display: block )) */
+.content-3__inline {
+  width: 500px;
+  height: 500px;
+  display: block;
+}
+
+.content-3__image {
+  /* min-height: 400px;
+  max-height: 750px; */
+  min-width: 400px;
+  max-width: 700px;
+  /* width: 100px; */
+  /* дефолтное значение: */
+  /* height: auto; */
+}
+
+.content-4__block {
+  margin: 50px;
+  /* border: 1px solid #000;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: #ff0000; */
+  border-right: 5px dashed #ff0000;
+  border-bottom: 5px dashed #ff0000;
+  /* ось x, ось y, размытие, размер, цвет */
+  box-shadow: 17px 20px 14px 3px #4b3535;
+  /* ещё можно сделать тень внутри:
+  box-shadow: inset 17px 20px 14px 3px #4b3535 */
+  /* box-shadow: 
+    0 0 0 3px #ff0000,
+    0 0 0 6px #ffff00,
+    0 0 0 9px #00ff88; */
+}
+
+.content-4__inline {
+  border: 1px solid #000;
+  box-shadow: 10px 8px 10px 5px #635252;
+  /* прозрачность, значения от 0 до 1 */
+  /* opacity: 0; */
+  /* полностью скрывает элемент */
+  visibility: hidden;
+}
