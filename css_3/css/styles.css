@@ -1,0 +1,10 @@
+.user-card__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-card__desc--color-green {
+  color: green;
+}

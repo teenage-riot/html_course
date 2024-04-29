@@ -1,0 +1,34 @@
+.parent {
+  color: orange;
+}
+
+div {
+  color: green;
+}
+
+#id-block {
+  background-color: black;
+}
+
+.block {
+  color: red;
+}
+
+.block-1, .block-2, .block-3 {
+  color: red;
+}
+
+div.blue-block {
+  color: blue;
+}
+
+/* обращаемся к таким дочерним элементам тегов div, 
+которые относятся к классу orange */
+div .orange {
+  color: orange;
+}
+
+/* обращаемся только к дочерним элементам первого уровня */
+.parent-1>.child-1 {
+  color: violet;
+}
