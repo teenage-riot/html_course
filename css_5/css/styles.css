@@ -50,3 +50,10 @@
 .text-7 {
   white-space: nowrap;
 }
+
+.jost-text {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
