@@ -23,10 +23,11 @@
   <div class="headline">
     <div class="headline__container">
       <a class="headline__logo" href="№">
-        <img class="headline__logo-image" src="../favicon.ico" alt="logo"></img>
+        <img class="headline__logo-image" src="../favicon.ico" alt="logo">
         Hello Freelance!!
       </a>
-      <a class="headline__github-button" href="https://github.com/teenage-riot/html_course/blob/main/css_8/testdrive.html" target="_blank">ГитХахаб</a>
+      <a class="headline__github-button"
+        href="https://github.com/teenage-riot/html_course/blob/main/css_8/testdrive.html" target="_blank">ГитХахаб</a>
     </div>
   </div>
 
@@ -115,7 +116,8 @@
         Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
       </p>
       <p class="main__p">
-        Далеко-далеко за словесными горами в стране гласных и согласных живут <a href="http://surl.li/thzqw">рыбные тексты</a>.
+        Далеко-далеко за словесными горами в стране гласных и согласных живут <a href="http://surl.li/thzqw">рыбные
+          тексты</a>.
       </p>
 
       <h4 class="main__title">Locks, stocks, nevermind</h4>
@@ -141,8 +143,34 @@
         Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
         Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.
       </p>
-      <a class="main__button green-btn" href="#">Лавэ на пиво</a>
 
+      <!-- кнопка + всплывающее окошко -->
+      <div class="popup-container">
+        <input type="checkbox" id="popup-click">
+        <label for="popup-click" class="main__button  green-btn">Лавэ на пиво</label>
+  
+        <div class="popup">
+          <div class="popup__window">
+            <div class="popup__window-title">
+              <h1>Помочь братишке</h1>
+            </div>
+            <div class="popup__window-body">
+              <p>
+                +79017243570 <br>
+                АкБарс Банк <br>
+                Глеб Александрович И.
+              </p>
+            </div>
+            <div class="popup__window-bottom">
+              <label for="popup-click" class="main__button">OK computer</label>
+            </div>
+          </div>
+          <div class="popup__blackout"></div>
+        </div>
+      </div class="popup-container">
+
+
+      
       <h4 class="main__title">Лак "Сосна" is my drug of choice</h4>
       <div class="main__ex-link"><a href="http://surl.li/tibfy" target="_blank">http://surl.li/tibfy</a></div>
       <p class="main__p">
@@ -161,6 +189,10 @@
     <div class="sideinfo">
       <h4 class="main__title">Упдатес</h4>
       <ol class="sideinfo__updates-list">
+        <li class="sideinfo__updates-item">
+          <strong>3.50-3.50-3.50</strong> <br>
+          Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+        </li>
         <li class="sideinfo__updates-item">
           <strong>3.50-3.50-3.50</strong> <br>
           Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
@@ -436,10 +468,14 @@
 
   <footer class="site-footer">
     Сопственна вотЪ!
+    <sup><img class="site-footer__image" src="copyleft.png" alt="copyleft"></sup>
   </footer>
 
   <!-- подключение скрипта для подсветки кода -->
   <script src="./js/rainbow-custom.min.js"></script>
+
+  <script src="./js/popup.js"></script>
+
 </body>
 
 </html>
