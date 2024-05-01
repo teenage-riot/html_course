@@ -1,0 +1,87 @@
+.wrapper {
+  padding: 100px 15px;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 100%;
+  border: 10px solid #999;
+  display: flex;
+}
+
+.block {
+  height: 300px;
+  width: 100%;
+  max-width: 143px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.842);
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: deepskyblue;
+}
+
+.dark-blue {
+  background-color: blue;
+}
+
+.violet {
+  background-color: blueviolet;
+}
+
+/* --------------- */
+
+.container {
+  /* position: relative; */
+}
+
+.blue {
+  /* position: relative; */
+  /* ось х */
+  /* top: 100px; */
+  /* ось у */
+  /* left: 100px; */
+  /* ось z */
+  /* z-index: -1; */
+}
+
+.orange {
+  /* данное свойство работает относительно последнего родителя,
+  которому задано position: relative */
+  /* position: absolute;
+  top: 40%;
+  left: 90%; */
+}
+
+.red {
+  /* относительно viewport'a */
+  /* position: fixed;
+  top: 45%;
+  left: 45%;
+  z-index: -2; */
+}
+
+/* липнет к краю экрана, а отлипает
+только столкнувшись с границей своего родителя */
+.green {
+  position: sticky;
+  top: 50px;
+}

@@ -1,0 +1,32 @@
+.wrapper {
+  padding: 100px 100px 30vh;
+  height: 100vh;
+}
+
+.block {
+  height: 100%;
+  box-shadow: 0 0 10px rgb(83, 83, 83);
+  border-radius: 5px;
+}
+
+/* --------------- */
+
+.block {
+  background: url(../img/letter-man.jpg) 0 0 / auto 100% no-repeat,
+  url(../img/cat.jpg) 100% 0 / auto 100% no-repeat,
+  linear-gradient(90deg,#000000 30%, #ffffff 70%);
+
+  /* background: #98bb64; */
+  /* background-color: #98bb64; */
+  /* первое значение - направление градиента;
+  проценты после цвета - момент, в который этот цвет начнётся/закончится */
+  /* background: linear-gradient(90deg, #98bb64, #ffa500 70%); */
+  /* background: radial-gradient(#98bb64, #ffa500); */
+
+  /* background-image: url(../img/meow.jpg);
+  background-repeat: round; */
+  /* background-position: x y; */
+  /* background-attachment: scroll;
+  overflow: auto;
+  background-size: auto; */
+}
