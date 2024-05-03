@@ -93,6 +93,8 @@ h2 {
 .rotate__red {
   /* Z */
   /* transform: rotate(45deg); */
+  /* задаёт точку, относительно которой происходит трансформация */
+  transform-origin: right top;
 }
 
 .rotate__blue {
