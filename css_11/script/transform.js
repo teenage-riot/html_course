@@ -89,4 +89,46 @@ document.getElementById('rotate-btn').addEventListener('click', function() {
 });
 
 
+// Масштабирование
+
+let isScaling = false;
+let scaleInterval = null;
+let scale = 1;
+let scaleIncrease = true
+
+document.getElementById('scale-btn').addEventListener('click', function() {
+  // Получаем красный блок
+  const redBlock = document.querySelector('.scale__red');
+  const bluedBlock = document.querySelector('.scale__blue');
+
+  if (!isScaling) {
+    isScaling = true;
+    
+    function scaleBlocks() {
+      if (scaleIncrease) {
+        scale += 0.01;
+      } else {
+        scale -= 0.01;
+      }
+
+      if (scale > 2) {
+        scaleIncrease = false;
+      } else if (scale < 0.1) {
+        scaleIncrease = true;
+      }
+        
+      // Применяем трансформацию к блоку
+      redBlock.style.transform = `scale(${scale})`;
+      bluedBlock.style.transform = `scaleX(${scale})`;
+    }
+
+    // Вызываем функцию rotateRedBlock каждые 50 миллисекунд (или какое вам удобно время)
+    scaleInterval = setInterval(scaleBlocks, 50);
+  } else {
+    clearInterval(scaleInterval);
+    isScaling = false;
+  }
+});
+
+
 

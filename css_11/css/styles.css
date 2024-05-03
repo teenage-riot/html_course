@@ -98,3 +98,11 @@ h2 {
 .rotate__blue {
   /* transform: rotateZ(45deg); */
 }
+
+.scale__red {
+  transform: scale(1.5);
+}
+
+.scale__blue {
+  transform: scaleX(-1.5);
+}
