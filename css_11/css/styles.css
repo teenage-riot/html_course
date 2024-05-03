@@ -7,7 +7,7 @@ body {
   color: #fff;
 }
 
-.button {
+.btn {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.69rem;
@@ -23,6 +23,11 @@ body {
   line-height: 1.5rem;
   padding: 0.63rem 2rem 0.63rem 2rem;
   margin-bottom: 7rem;
+}
+
+.btn:active {
+  background-color: #177c2a;
+  color: #9ea9a0;
 }
 
 .container {
@@ -78,18 +83,18 @@ h2 {
 
 .translate__red {
   /* X, Y */
-  transform: translate(-35px, 35px);
+  /* transform: translate(-35px, 35px); */
 }
 
 .translate__blue {
-  transform: translateX(35px);
+  /* transform: translateX(35px); */
 }
 
 .rotate__red {
   /* Z */
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
 }
 
 .rotate__blue {
-  transform: rotateZ(45deg);
+  /* transform: rotateZ(45deg); */
 }
