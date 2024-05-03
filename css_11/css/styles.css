@@ -100,9 +100,13 @@ h2 {
 }
 
 .scale__red {
-  transform: scale(1.5);
+  /* transform: scale(1.5); */
 }
 
 .scale__blue {
-  transform: scaleX(-1.5);
+  /* transform: scaleX(-1.5); */
+}
+
+.skew__red {
+  /* transform: skew(35deg, 0deg); */
 }

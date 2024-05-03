@@ -34,16 +34,16 @@ document.getElementById('translate-btn').addEventListener('click', function() {
           if (moveDown) {
             positionY += 1;
           } else {
-            positionX -= 1;
+            positionY -= 1;
           }
 
-          if (positionX > 100) {
+          if (positionY > 100) {
             moveDown = false;
-          } else if (positionX < -100) {
+          } else if (positionY < -100) {
             moveDown = true;
           }
 
-          blueBlock.style.transform = `translateY(${positionX}px)`;
+          blueBlock.style.transform = `translateY(${positionY}px)`;
         }
 
         // Вызываем функцию moveBlock каждые 50 миллисекунд (или какое вам удобно время)
@@ -131,4 +131,42 @@ document.getElementById('scale-btn').addEventListener('click', function() {
 });
 
 
+// Перекос 
 
+let isSkewing = false;
+let skewInterval = null;
+let skew = 0;
+let skewIncrease = true
+
+document.getElementById('skew-btn').addEventListener('click', function() {
+  const redBlock = document.querySelector('.skew__red');
+  const bluedBlock = document.querySelector('.skew__blue');
+
+  if (!isSkewing) {
+    isSkewing = true;
+    
+    function skewBlocks() {
+      if (skewIncrease) {
+        skew += 1;
+      } else {
+        skew -= 1;
+      }
+
+      if (skew > 180) {
+        skewIncrease = false;
+      } else if (skew < -180) {
+        skewIncrease = true;
+      }
+        
+      // Применяем трансформацию к блоку
+      redBlock.style.transform = `skewX(${skew}deg)`;
+      bluedBlock.style.transform = `skewY(${skew}deg)`;
+    }
+
+    // Вызываем функцию rotateRedBlock каждые 50 миллисекунд (или какое вам удобно время)
+    skewInterval = setInterval(skewBlocks, 50);
+  } else {
+    clearInterval(skewInterval);
+    isSkewing = false;
+  }
+});
