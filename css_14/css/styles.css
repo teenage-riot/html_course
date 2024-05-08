@@ -25,9 +25,9 @@ body {
   font-size: 3rem;
 }
 
-.flexbox__item:nth-child(2) .flexbox__item-content {
+/* .flexbox__item:nth-child(2) .flexbox__item-content {
   padding: 75px 50px;
-}
+} */
 
 .desc {
   display: flex;
@@ -49,9 +49,11 @@ body {
 .desc__color--f {
   background-color: rgb(231, 203, 172);
 }
+
 .desc__color--i {
   background-color: rgb(143, 119, 91);
 }
+
 .desc__color--c {
   background-color: rgb(83, 64, 44);
 }
@@ -61,17 +63,54 @@ body {
 .flexbox {
   display: flex;
 
-  /* выравнивание по горизонтали: */
-  justify-content: space-between;
+  /* выравнивание по горизонтали при flex-direction: row */
+  /* justify-content: space-between; */
 
-  /* выравнивание по вертикали: */
-  align-items: center;
+  /* выравнивание по вертикали при flex-direction: row: */
+  /* align-items: center; */
 
   /* задаёт поведение элементов флексбокса при уменьшении его размеров: */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+
+  /* меняет не только расположение элементов, 
+  но и направление осей для justify-content и align-items */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.flexbox__item {
+  /* задаёт поведение относительно размеров: */
+  /* flex-basis: 44%; */
+  width: 350px;
 }
 
 .flexbox__item:first-child {
   /* выравнивание по вертикали конкретно этого элемента: */
-  align-self: flex-end;
+  /* order: 3; */
+
+  /* align-self: end; */
+}
+
+.flexbox__item:nth-child(2) {
+  /* order: 2; */
+
+  /* показывает, может ли элемент быть больше, чем его flex-basis */
+  /* по умолчанию 0 */
+  /* flex-grow: 1; */
+
+  /* показывает, может ли элемент быть меньше, чем его flex-basis */
+  /* по умолчанию 1 */
+  /* flex-shrink: 0; */
+
+  /* объединённое свойство */
+  /* flex: 1 0 300px; */
+
+  width: auto;
+}
+
+.flexbox__item:last-child {
+  /* order: 1; */
+  /* align-self: center; */
 }
