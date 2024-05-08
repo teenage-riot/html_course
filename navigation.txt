@@ -18,3 +18,9 @@ css_5 - свойства текста
 css_6 - единицы измерения
 css_7 - шрифты
 css_8 - основные свойства CSS
+css_9 - background
+css_10 - position
+css_11 - transform
+css_12 - transition (плавность)
+css_13 - animation
+css_14 - flexbox
