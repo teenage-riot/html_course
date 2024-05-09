@@ -1,3 +1,7 @@
+html, body {
+  font-family: "Manrope", sans-serif;
+}
+
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -9,4 +13,62 @@
   max-width: 1310px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.button {
+
+}
+
+.logo {
+}
+
+/* ------------------------------------------------------------ */
+
+.header {
+
+}
+.header__top {
+  
+}
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-item {
+  margin-right: 40px;
+}
+
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+
+.header__nav-link {
+  font-weight: 600;
+}
+
+.header__nav-separator {
+  margin: 0 32px;
+}
+
+.header__nav-assistance {
+}
+.header__nav-assistance-img {
+}
+.header__nav-assistance-text {
+}
+.header__nav-assistance-phone {
+}
+.header__body {
 }
