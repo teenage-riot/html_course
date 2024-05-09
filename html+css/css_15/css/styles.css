@@ -1,0 +1,173 @@
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  padding: 50px;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid {
+  margin-bottom: 200px;
+  padding-bottom: 200px;
+  border-bottom: 10px solid #363636;
+  min-height: 100vh;
+}
+
+.item {
+  border: 5px dashed #444;
+  font-size: 40px;
+  padding: .8em;
+  text-align: center;
+}
+
+/* -------------------------------------------------------- */
+
+.grid-1 {
+  display: grid;
+  
+    /* ширина для трёх колонок: */
+    /* grid-template-columns: 300px minmax(100px, 1fr) 300px; */
+    
+    /* grid-template-columns: 1fr auto 1fr; */
+
+    /* это как авто, только не больше 400px: */
+    /* grid-template-columns: 1fr fit-content(400px) 1fr; */
+
+  /* высота для двух строк: */
+  /* grid-template-rows: auto auto; */
+
+  /* то же самое, что 1fr 1fr : */
+  /* grid-template-rows: repeat(2, 1fr); */
+
+  grid-template: repeat(2, 350px) / 1fr fit-content(400px) 1fr;
+
+  justify-items: start;
+  align-items: end;
+}
+
+.grid-1__item--1 {
+  order: 1;
+}
+
+.grid-1__item--2 {
+  order: 2;
+}
+
+.grid-1__item--3 {
+  order: 5;
+}
+
+.grid-1__item--4 {
+  order: 4;
+  justify-self: stretch;
+  align-self: center;
+}
+
+.grid-1__item--5 {
+  order: 3;
+}
+
+.grid-1__item--6 {
+  order: 6;
+}
+
+/* -------------------------------------------------------- */
+
+.grid-2 {
+  display: grid;
+
+  /* делит области на три строки и два столбца: */
+  /* grid-template: 1fr 5fr 2fr / 1fr 300px; */
+
+  /* распределяет наши области по структуре: */
+  /* grid-template-areas: 
+  "header header"
+  "main aside"
+  "footer footer"; */
+
+  /* сокращённая запись: */
+  grid-template: 
+  "header header" 1fr
+  "main aside" 5fr
+  "footer footer" 2fr
+  / 1fr 300px;
+}
+
+.grid-2__item--header {
+  /* задаёт имя для области: */
+  grid-area: header;
+}
+
+.grid-2__item--main {
+  grid-area: main;
+}
+
+.grid-2__item--aside {
+  grid-area: aside;
+}
+
+.grid-2__item--footer {
+  grid-area: footer;
+}
+
+/* -------------------------------------------------------- */
+
+.grid-3 {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+
+  /* параметры для "лишних", не влазящих в описанную выше структуру, ячеек: */
+  /* grid-auto-columns: auto; */
+  /* grid-auto-rows: 400px; */
+
+  grid-auto-flow: dense;
+}
+
+.grid-3__item--6 {
+  grid-column: span 2;
+}
+
+/* -------------------------------------------------------- */
+
+.grid-4 {
+  display: grid;
+  /* grid-template: 1fr 1fr / 1fr 1fr 1fr; */
+
+  /* здесь мы даём названия линиям грид-сетки, расположенным в 
+  соответствующих областях: */
+  grid-template: [row1] 1fr [row2] 1fr [row3] 
+  / [col1] 1fr [col2] 1fr [col3] 1fr [col4];
+
+  /* расстояние между строками и столбцами: */
+  /* row-gap: 1rem;
+  column-gap: 50px; */
+
+  /* короткая запись: */
+  /* grid-gap: 20px; */
+  grid-gap: 20px 10%;
+}
+
+.grid-4__item--3 {
+  /* здесь указываются номера линий грид-сетки,
+  откуда данный элемент начинается и где заканчивается: */
+  /* grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4; */
+
+  /* сокращённая запись: */
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+
+  /* запись с применением имён для сетки: */
+  grid-row: row2 / row3;
+  grid-column: col2 / col4;
+}

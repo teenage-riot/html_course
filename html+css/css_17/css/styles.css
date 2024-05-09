@@ -1,0 +1,118 @@
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+.wrapper {
+  padding: 50px;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.link,
+.list,
+.block {
+  margin-bottom: 100px;
+}
+
+.block {
+  background-color: rgb(199, 105, 105);
+  width: 100%;
+  height: 200px;
+  max-width: 200px;
+  border-radius: 1rem;
+}
+
+.link {
+  align-self: flex-start;
+  background-color: rgb(111, 105, 199);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ---------------------------------------------------- */
+
+.block-wrapper {
+  position: relative;
+}
+
+/* добавляет ещё один элемент внутрь заданного, делая его самым первым */
+.block-wrapper::before {
+  content: "before";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(199, 105, 105);
+  width: 100%;
+  height: 200px;
+  max-width: 200px;
+  border-radius: 1rem;
+  /* margin-bottom: 100px; */
+}
+
+/* аналогично, но после */
+.block-wrapper::after {
+  content: "after";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(199, 105, 105);
+  width: 100%;
+  height: 200px;
+  max-width: 200px;
+  border-radius: 1rem;
+  /* margin-bottom: 100px; */
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.list {
+  line-height: 1.5em;
+}
+
+.list__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list__item::before {
+  content: "";
+  display: inline-block;
+  border-left: 1em solid #24bd43; /* Измените высоту и цвет треугольника, меняя это значение */
+  border-top: 0.5em solid transparent; /* Измените ширину треугольника, меняя это значение */
+  border-bottom: 0.5em solid transparent; 
+  margin: 0 1.5rem;
+}
+
+.link::after {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background: url("../../favicon.ico") 0 0 / 100% 100%;
+  margin-left: 0.5em;
+}
+
+/* применяем псевдокласс для только что созданного псевдоэлемента: */
+.link:hover::after {
+  transform: scaleX(-1);
+}
+
+.text::first-line {
+  color: darkgoldenrod;
+}
+
+.text::first-letter {
+  font-size: 2em;
+}
