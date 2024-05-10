@@ -43,9 +43,8 @@ html, body {
 /* ------------------------------------------------------------ */
 
 .header {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 }
 
@@ -144,16 +143,20 @@ html, body {
 /* -------------------------------------------------- */
 
 .header__body {
-  margin: 80px 0 135px 0;
+  /* элемент может занимать всё оставшееся пространство: */
+  /* flex-grow: 1; */
+  
+  /* margin: 80px 0 135px 0; */
+  /* распологаем элемент по центру свободной области: */
+  margin: auto 0;
 }
 
 .header__body-inner {
   display: flex;
-  /* margin: auto 0; */
 }
 
 .header__content {
-  margin-right: 30px;
+  margin: auto 30px auto 0;
 }
 
 .header__title {
