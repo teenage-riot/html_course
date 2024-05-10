@@ -14,6 +14,7 @@ html, body {
   max-width: 1310px;
   padding: 0 15px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .button {
@@ -41,7 +42,12 @@ html, body {
 
 /* ------------------------------------------------------------ */
 
-.header {}
+.header {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  height: 100vh;
+}
 
 .header__top {
   padding: 18px 0px 16px 0px;
@@ -138,13 +144,12 @@ html, body {
 /* -------------------------------------------------- */
 
 .header__body {
-  padding: 80px;
+  margin: 80px 0 135px 0;
 }
 
 .header__body-inner {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* margin: auto 0; */
 }
 
 .header__content {
@@ -266,3 +271,4 @@ html, body {
   color: #000000;
   font-weight: 500;
 }
+
