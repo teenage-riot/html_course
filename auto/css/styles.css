@@ -259,7 +259,6 @@ html, body {
 .header__atop-rating-flexbox {
   display: flex;
   flex-direction: column;
-  margin-right: 15px;
   padding: 24px 12px;
 }
 
