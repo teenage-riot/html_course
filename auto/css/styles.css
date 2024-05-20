@@ -3,20 +3,6 @@ html, body {
   font-family: "Manrope", sans-serif;
 }
 
-.wrapper {
-  min-height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.container {
-  /* max-width = 1280px (ширина контент-области) + 15px*2 (два паддинга) */
-  max-width: 1310px;
-  padding: 0 15px;
-  margin: 0 auto;
-  height: 100%;
-}
-
 .button {
   display: inline-block;
   background-color: #ff6433;
@@ -38,7 +24,27 @@ html, body {
   transform: scale(0.95);
 }
 
+.container {
+  /* max-width = 1280px (ширина контент-области) + 15px*2 (два паддинга) */
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
 .logo {}
+
+.title {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 76px;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 
 /* ------------------------------------------------------------ */
 
@@ -85,6 +91,10 @@ html, body {
 
 .header__nav-link:hover {
   color: #ff6433;
+}
+
+.header__nav-link:active {
+  color: darkred;
 }
 
 .header__nav-separator {
@@ -161,9 +171,7 @@ html, body {
 
 .header__title {
   font-size: 64px;
-  font-weight: 800;
   line-height: 84px;
-  letter-spacing: -3%;
   margin-bottom: 32px;
 }
 
@@ -274,3 +282,74 @@ html, body {
   font-weight: 500;
 }
 
+/* ------------------------------------------------------------ */
+
+.offer {
+  background-color: #F2F2F2;
+  margin-top: 135px;
+}
+
+.offer__title-section {
+  padding: 128px 0 64px 0;
+}
+
+.offer__subtitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+
+.offer__title {
+  text-align: center;
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.offer__buttons-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.offer__button {
+  display: inline-block;
+  align-content: center;
+  background-color: #ffffff;
+  margin: 0 8px 8px 0;
+  text-align: center;
+  aspect-ratio: 1 / 0.735;
+}
+
+.offer__button:nth-child(4n) {
+  margin-right: 0;
+}
+
+.offer__button:nth-child(n+5) {
+  margin-bottom: 0;
+}
+
+.offer__button img {
+  margin-bottom: 12px;
+}
+
+.offer__button-label {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.offer__bottom-inscription {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 175%;
+  margin-top: 32px;
+}
+
+.offer__bottom-inscription img {
+  align-content: center;
+}
