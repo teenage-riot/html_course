@@ -32,7 +32,17 @@ html, body {
   height: 100%;
 }
 
-.logo {}
+.link {
+  transition: all .3s;
+}
+
+.link:hover {
+  color: #ff6433;
+}
+
+.link:active {
+  color: darkred;
+}
 
 .title {
   font-size: 58px;
@@ -86,15 +96,6 @@ html, body {
   font-weight: 600;
   line-height: 1.75;
   white-space: nowrap;
-  transition: all .3s;
-}
-
-.header__nav-link:hover {
-  color: #ff6433;
-}
-
-.header__nav-link:active {
-  color: darkred;
 }
 
 .header__nav-separator {
@@ -319,6 +320,7 @@ html, body {
   margin: 0 8px 8px 0;
   text-align: center;
   aspect-ratio: 1 / 0.735;
+  transition: all .7s;
 }
 
 .offer__button:nth-child(4n) {
@@ -329,8 +331,19 @@ html, body {
   margin-bottom: 0;
 }
 
+.offer__button:hover {
+  background-color: #FF6433;
+  color: #fff;
+  cursor: default;
+}
+
+.offer__button:hover img {
+  filter: invert(100%);
+}
+
 .offer__button img {
   margin-bottom: 12px;
+  transition: all .7s;
 }
 
 .offer__button-label {
@@ -350,6 +363,16 @@ html, body {
   margin-top: 32px;
 }
 
-.offer__bottom-inscription img {
+.offer__link {
+  display: flex;
+}
+
+.offer__link-arrow {
   align-content: center;
+  transition: .7s;
+}
+
+.offer__link:hover .offer__link-arrow {
+  margin-left: 30px;
+  /* filter: brightness(0) saturate(100%) invert(49%) sepia(73%) saturate(2398%) hue-rotate(338deg) brightness(100%) contrast(102%); */
 }
