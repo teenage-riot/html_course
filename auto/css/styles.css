@@ -1,6 +1,7 @@
 html, body {
   color: #1e1b1b;
   font-family: "Manrope", sans-serif;
+  cursor: default;
 }
 
 .button {
@@ -287,6 +288,9 @@ html, body {
 
 .offer {
   background-color: #F2F2F2;
+}
+
+.offer__inner {
   margin-top: 135px;
 }
 
@@ -320,7 +324,7 @@ html, body {
   margin: 0 8px 8px 0;
   text-align: center;
   aspect-ratio: 1 / 0.735;
-  transition: all .7s;
+  transition: all .5s;
 }
 
 .offer__button:nth-child(4n) {
@@ -334,7 +338,6 @@ html, body {
 .offer__button:hover {
   background-color: #ff6433;
   color: #fff;
-  cursor: default;
 }
 
 .offer__button:hover img {
@@ -343,7 +346,7 @@ html, body {
 
 .offer__button img {
   margin-bottom: 12px;
-  transition: all .7s;
+  transition: all .5s;
 }
 
 .offer__button-label {
@@ -406,3 +409,6 @@ html, body {
 .offer__link:hover .offer__link-arrow-orange {
   opacity: 1;
 }
+
+/* ------------------------------------------------------------ */
+

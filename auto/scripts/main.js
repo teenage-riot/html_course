@@ -17,4 +17,6 @@ $(function () {
     // Your custom options
   });
 
+  var mixer = mixitup('.blog__list');
+
 });
