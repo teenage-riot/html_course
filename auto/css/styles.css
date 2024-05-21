@@ -34,11 +34,12 @@ html, body {
 }
 
 .link {
-  transition: all .3s;
+  transition: all 1s;
 }
 
 .link:hover {
   color: #ff6433;
+  transition: all .3s;
 }
 
 .link:active {
@@ -74,8 +75,6 @@ html, body {
   justify-content: space-between;
   align-items: center;
 }
-
-.header__logo {}
 
 .header__nav {
   margin-left: auto;
@@ -235,8 +234,6 @@ html, body {
   position: relative;
 }
 
-.header__main-img {}
-
 .header__atop {
   display: inline-flex;
   align-items: center;
@@ -376,7 +373,7 @@ html, body {
   position: relative;
   width: 54px;
   height: 13px;
-  transition: all .7s; 
+  transition: all .7s;
 }
 
 .offer__link-image-container img {
@@ -385,13 +382,11 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: all .7s; 
+  transition: all .7s;
 }
-
 
 .offer__link-arrow {
   align-content: center;
-  /* transition: .7s; */
 }
 
 .offer__link:hover .offer__link-image-container {
@@ -399,6 +394,10 @@ html, body {
 }
 
 .offer__link-arrow-orange {
+  opacity: 0;
+}
+
+.offer__link-arrow-darkred {
   opacity: 0;
 }
 
@@ -410,5 +409,90 @@ html, body {
   opacity: 1;
 }
 
+.offer__link:active .offer__link-arrow-darkred {
+  opacity: 1;
+}
+
 /* ------------------------------------------------------------ */
 
+.blog {}
+
+.blog__inner {
+  margin-top: 131px;
+  margin-bottom: 136px;
+}
+
+.blog__title {
+  margin-bottom: 47px;
+}
+
+.blog__filter-box {
+  margin-bottom: 46px;
+}
+
+.blog__filter-btn {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin-right: 30px;
+  background-color: transparent;
+}
+
+.blog__filter-btn:last-child {
+  margin-right: 0;
+}
+
+.blog__filter-btn--active {
+  text-decoration: underline;
+}
+
+.blog__list {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(3, 1fr);
+  gap: 64px 32px;
+}
+
+.blog__list-item {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.blog__list-link {
+  display: block;
+  transition: all .3s;
+}
+
+.blog__list-link:active {
+  transform: scale(0.95);
+}
+
+.blog__list-link:hover .blog__list-title {
+  color: #ff6433;
+}
+
+.blog__list-img-box {
+  margin-bottom: 24px;
+}
+
+.blog__list-img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog__list-subtitle {
+  color: #939191;
+  margin-bottom: 16px;
+}
+
+.blog__list-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 16px;
+  transition: all .7s;
+}
+
+.blog__list-text {
+  color: #232536;
+}
