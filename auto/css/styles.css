@@ -25,6 +25,10 @@ html, body {
   transform: scale(0.95);
 }
 
+.button--black {
+  background-color: #1E1B1B;
+}
+
 .container {
   height: 100%;
   margin: 0 auto;
@@ -53,6 +57,10 @@ html, body {
 .main__offer {
   margin-top: 135px;
   padding: 128px 0;
+}
+
+.main__stats {
+  margin-bottom: 48px;
 }
 
 .main__we-follow {
@@ -502,6 +510,67 @@ html, body {
   display: flex;
   justify-content: center;
   padding: 22px 0;
+}
+
+/* ------------------------------------------------------------ */
+
+.stats {}
+
+.stats__img-block {
+  display: flex;
+  position: relative;
+}
+
+.stats__img-block img {
+  transform: translateX(-318px);
+  z-index: -1;
+}
+
+.stats__content {
+  background-color: #FF6433;
+  height: 100%;
+  left: 0;
+  max-width: 729px;
+  position: absolute;
+  top: 0;
+  padding: 128px 80px 0 80px;
+}
+
+.stats__content .button {
+  margin-left: -19px;
+}
+
+.stats__title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 140%;
+  margin-bottom: 48px;
+}
+
+.stats__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats__list-item {
+
+}
+
+.stats__list-value {
+  color: #661CE7;
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 76px;
+}
+
+.stats__list-indicator {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 36px;
+  opacity: 0.7;
 }
 
 /* ------------------------------------------------------------ */
