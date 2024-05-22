@@ -46,6 +46,17 @@ html, body {
   color: darkred;
 }
 
+.main__offer {
+  margin-top: 135px;
+  padding: 128px;
+}
+
+.main__we-follow {}
+
+.main__blog {
+  padding: 131px 0 136px 0;
+}
+
 .title {
   font-size: 58px;
   font-weight: 800;
@@ -287,12 +298,8 @@ html, body {
   background-color: #F2F2F2;
 }
 
-.offer__inner {
-  margin-top: 135px;
-}
-
 .offer__title-section {
-  padding: 128px 0 64px 0;
+  margin-bottom: 64px;
 }
 
 .offer__subtitle {
@@ -415,12 +422,58 @@ html, body {
 
 /* ------------------------------------------------------------ */
 
-.blog {}
+.we-follow {}
 
-.blog__inner {
-  margin-top: 131px;
-  margin-bottom: 136px;
+.we-follow__content {}
+
+.we-follow__title {
+  margin-bottom: 16px;
 }
+
+.we-follow__content-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 32px;
+  opacity: 0.6;
+}
+
+.we-follow__list {
+  list-style-type: none;
+}
+
+.we-follow__list-item {}
+
+.we-follow__list-number {
+  align-items: center;
+  background-color: #661CE7;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  font-size: 32px;
+  font-weight: 700;
+  height: 72px;
+  justify-content: center;
+  line-height: 24px;
+  width: 72px;
+}
+
+.we-follow__list-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.we-follow__list-text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 175%;
+  opacity: 0.6;
+}
+
+.we-follow__list-decor {}
+
+/* ------------------------------------------------------------ */
 
 .blog__title {
   margin-bottom: 47px;
