@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<svg width="22.1333" height="13.321300000000003" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <desc>Created with Pixso.</desc>
+
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m3.41,7.66l3.95,3.95c0.4,0.39 0.4,1.01 0,1.41c-0.39,0.4 -1.01,0.4 -1.41,0l-5.66,-5.66c-0.39,-0.39 -0.39,-1.02 0,-1.41l5.66,-5.66c0.4,-0.39 1.02,-0.39 1.41,0c0.4,0.4 0.4,1.02 0,1.42l-3.95,3.95l17.72,0c0.56,0 1,0.44 1,1c0,0.56 -0.44,1 -1,1l-17.72,0z" fill="#1E1B1B" fill-opacity="1" fill-rule="evenodd" id="Arrow" transform="rotate(179.989 11.0638 6.65875)"/>
+ </g>
+</svg>

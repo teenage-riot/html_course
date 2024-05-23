@@ -694,9 +694,7 @@ html, body {
 }
 
 .customers__slider {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0 48px;
+  margin: 0 -48px;
 }
 
 .customers__slide {
@@ -704,6 +702,7 @@ html, body {
   border: 1px solid rgba(172, 172, 172, 0.29);
   border-radius: 6px;
   box-sizing: border-box;
+  margin: 0 48px;
   padding: 72px;
 }
 
@@ -734,4 +733,34 @@ html, body {
   font-size: 24px;
   letter-spacing: -1.05px;
   line-height: 36px;
+}
+
+.customers__slider-arrows {
+  display: flex;
+  justify-content: end;
+}
+
+.customers__arrow {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  transition: all .35s;
+  user-select: none;
+  width: 48px;
+}
+
+.customers__arrow:hover {
+  background-color: #1E1B1B;
+}
+
+.customers__arrow:hover img {
+  filter: invert(100%);
+}
+
+.customers__arrow:active {
+  scale: 0.9;
 }

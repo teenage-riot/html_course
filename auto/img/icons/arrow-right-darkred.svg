@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<svg width="54" height="13" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<svg width="53.0039" height="13.3218" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
  <desc>Created with Pixso.</desc>
 
  <g class="layer">
   <title>Layer 1</title>
-  <path d="m49.58,5l-3.95,-3.95c-0.39,-0.4 -0.39,-1.02 0,-1.42c0.4,-0.39 1.02,-0.39 1.42,0l5.65,5.66c0.4,0.39 0.4,1.02 0,1.41l-5.65,5.66c-0.4,0.39 -1.02,0.39 -1.42,0c-0.39,-0.4 -0.39,-1.02 0,-1.42l3.95,-3.94l-49.58,0l0,-2l49.58,0z" fill="#8b0000" fill-rule="evenodd" id="Icon"/>
+  <path d="m49.58,5.66l-3.95,-3.95c-0.39,-0.4 -0.39,-1.02 0,-1.42c0.4,-0.39 1.02,-0.39 1.42,0l5.65,5.66c0.4,0.39 0.4,1.02 0,1.41l-5.65,5.66c-0.4,0.4 -1.02,0.4 -1.42,0c-0.39,-0.4 -0.39,-1.02 0,-1.41l3.95,-3.95l-49.58,0l0,-2l49.58,0z" fill="#8b0000" fill-rule="evenodd" id="Icon"/>
  </g>
 </svg>
