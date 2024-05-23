@@ -731,13 +731,60 @@ html, body {
 
 .customers__slide-text {
   font-size: 24px;
-  letter-spacing: -1.05px;
+  letter-spacing: -1.15px;
   line-height: 36px;
+}
+
+.customer__slider-bottom {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  position: relative;
+}
+
+.customer__slider-dots {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.customer__slider-dots .slick-dots {
+  display: flex;
+}
+
+.customer__slider-dots li {
+  margin-right: 15px;
+}
+
+.customer__slider-dots li:last-child {
+  margin-right: 0;
+}
+
+.customer__slider-dots button {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  font-size: 0;
+  height: 32px;
+  width: 32px;
+}
+
+.customer__slider-dots button::before {
+  background-color: #939191;
+  content: "";
+  height: 4px;
+  width: 100%;
+}
+
+.customer__slider-dots .slick-active button::before {
+  background-color: #FF6433;
+  transition: all .75s;
 }
 
 .customers__slider-arrows {
   display: flex;
-  justify-content: end;
+  margin-left: auto;
 }
 
 .customers__arrow {
@@ -763,4 +810,8 @@ html, body {
 
 .customers__arrow:active {
   scale: 0.9;
+}
+
+.customers__arrow-prev {
+  margin-right: 24px;
 }
