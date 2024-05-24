@@ -1,5 +1,7 @@
-//Make sure that the dom is ready
+// Make sure that the dom is ready
 $(function () {
+
+  // rating
 
   $(".header__atop-rating-rateYo").rateYo({
     rating: 4.5,
@@ -14,6 +16,8 @@ $(function () {
   });
 
 
+  // blog
+
   var mixer = mixitup('.blog__list');
 
   $('.blog__filter-btn').on('click', function () {
@@ -21,6 +25,8 @@ $(function () {
     $(this).addClass('blog__filter-btn--active');
   })
 
+
+  // slider
 
   $('.customers__slider').slick({
     appendDots: $('.customer__slider-dots'),
@@ -38,6 +44,14 @@ $(function () {
 
   $('.customers__arrow-next').on('click', function() {
     $('.customers__slider').slick('slickNext');
+  })
+
+
+  // accordeon
+
+  $('.faq__acc-item').on('click', function() {
+    $(this).toggleClass('faq__acc-item--active');
+    $(this).children('.faq__acc-text').slideToggle();
   })
 
 });

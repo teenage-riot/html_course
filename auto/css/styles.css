@@ -839,21 +839,20 @@ html, body {
 }
 
 .faq__acc {
-  max-width: 896px;
+  width: 896px;
 }
 
 .faq__acc-item {
   background-color: #fff;
+  cursor: pointer;
+  display: block;
   margin-bottom: 12px;
+  padding: 40px;
+  width: 100%;
 }
 
 .faq__acc-item:last-child {
   margin-bottom: 0;
-}
-
-.faq__acc-link {
-  display: block;
-  padding: 40px;
 }
 
 .faq__acc-head {
@@ -890,7 +889,7 @@ html, body {
   transition: .3s;
 }
 
-.faq__acc-link--active .faq__acc-btn::after {
+.faq__acc-item--active .faq__acc-btn::after {
   transform: rotate(0deg);
 }
 
@@ -900,5 +899,6 @@ html, body {
   font-weight: 600;
   line-height: 175%;
   margin-top: 16px;
+  padding-right: 114px;
 }
 
