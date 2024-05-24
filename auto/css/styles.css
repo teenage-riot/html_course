@@ -851,11 +851,47 @@ html, body {
   margin-bottom: 0;
 }
 
-.faq__acc-head {}
+.faq__acc-link {
+  display: block;
+  padding: 40px;
+}
+
+.faq__acc-head {
+  display: flex;
+}
 
 .faq__acc-title {
   font-size: 24px;
   line-height: 36px;
+}
+
+.faq__acc-btn {
+  background-color: #FF6433;
+  height: 48px;
+  margin-left: auto;
+  position: relative;
+  width: 51px;
+}
+
+.faq__acc-btn::before,
+.faq__acc-btn::after {
+  background-color: #ffffff;
+  border-radius: 2px;
+  content: "";
+  height: 2px;
+  left: 17px;
+  position: absolute;
+  top: 23px;
+  width: 17px;
+}
+
+.faq__acc-btn::after {
+  transform: rotate(90deg);
+  transition: .3s;
+}
+
+.faq__acc-link--active .faq__acc-btn::after {
+  transform: rotate(0deg);
 }
 
 .faq__acc-text {
@@ -863,4 +899,6 @@ html, body {
   font-size: 18px;
   font-weight: 600;
   line-height: 175%;
+  margin-top: 16px;
 }
+
