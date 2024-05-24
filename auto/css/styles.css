@@ -62,6 +62,10 @@ html, body {
   padding: 128px 0;
 }
 
+.main__faq {
+  padding: 128px 0;
+}
+
 .main__offer {
   margin-top: 135px;
   padding: 128px 0;
@@ -814,4 +818,49 @@ html, body {
 
 .customers__arrow-prev {
   margin-right: 24px;
+}
+
+/* ------------------------------------------------------------ */
+
+.faq {
+  background-color: #E2E6E9;
+}
+
+.faq__inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faq__title {
+  text-align: center;
+  margin-bottom: 86px;
+}
+
+.faq__acc {
+  max-width: 896px;
+}
+
+.faq__acc-item {
+  background-color: #fff;
+  margin-bottom: 12px;
+}
+
+.faq__acc-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq__acc-head {}
+
+.faq__acc-title {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.faq__acc-text {
+  color: #939191;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 175%;
 }
