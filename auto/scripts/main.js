@@ -1,6 +1,12 @@
 // Make sure that the dom is ready
 $(function () {
 
+  // video
+
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
+
   // rating
 
   $(".header__atop-rating-rateYo").rateYo({
