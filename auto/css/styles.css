@@ -67,12 +67,16 @@ html, body {
 }
 
 .main__feedback {
-  padding: 121px 0;
+  padding-top: 121px;
 }
 
 .main__offer {
   margin-top: 135px;
   padding: 128px 0;
+}
+
+.main__map {
+  padding-top: 178px;
 }
 
 .main__stats {}
@@ -578,7 +582,6 @@ html, body {
 
 .stats__list-indicator {
   font-size: 24px;
-
   letter-spacing: -1px;
   line-height: 36px;
   opacity: 0.7;
@@ -711,7 +714,7 @@ html, body {
   border-radius: 6px;
   box-sizing: border-box;
   margin: 0 48px;
-  padding: 72px;
+  padding: 72px 68px;
 }
 
 .customers__person {
@@ -739,7 +742,7 @@ html, body {
 
 .customers__slide-text {
   font-size: 24px;
-  letter-spacing: -1.15px;
+  letter-spacing: -1.1px;
   line-height: 36px;
 }
 
@@ -971,4 +974,21 @@ html, body {
 
 .feedback__text:last-child {
   margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------ */
+
+
+.map {}
+
+.map__inner {}
+
+.map__itself {
+  height: 512px;
+  width: auto;
+  /* z-index: 1; */
+}
+
+.map__back-img {
+  /* z-index: 0; */
 }
