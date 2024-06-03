@@ -30,19 +30,19 @@
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-item">
-                  <a class="header__nav-link link" href="##">Home</a>
+                  <a class="header__nav-link link" href="#">Home</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link link" href="##">About us</a>
+                  <a class="header__nav-link link" href="#about-us">About us</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link link" href="##">Services</a>
+                  <a class="header__nav-link link" href="#services">Services</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link link" href="##">Blog</a>
+                  <a class="header__nav-link link" href="#blog">Blog</a>
                 </li>
                 <li class="header__nav-item">
-                  <a class="header__nav-link link" href="##">Contact</a>
+                  <a class="header__nav-link link" href="#contact-us">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -117,7 +117,7 @@
     <main class="main">
       <section class="main__offer offer">
         <div class="container">
-          <div class="offer__inner">
+          <div class="offer__inner" id="about-us">
             <div class="offer__title-section">
               <h3 class="offer__subtitle">What we Offer</h3>
               <h2 class="offer__title title">We offer full service auto repair & maintenance</h2>
@@ -216,7 +216,7 @@
       </section>
       <section class="main__stats stats">
         <div class="container">
-          <div class="stats__inner">
+          <div class="stats__inner" id="services">
             <div class="stats__img-block">
               <img src="img/get-in-1.jpeg" alt="">
               <img src="img/get-in-2.jpeg" alt="">
@@ -290,7 +290,7 @@
       <section class="main__blog blog">
         <div class="container">
           <div class="blog__inner">
-            <div class="blog__inner">
+            <div class="blog__inner" id="blog">
               <h2 class="blog__title title">Our blog</h2>
               <div class="blog__filter-box">
                 <button class="blog__filter-btn blog__filter-btn--active link" data-filter="all">Latest</button>
@@ -601,7 +601,7 @@
       </section>
       <section class="main__feedback feedback">
         <div class="container">
-          <div class="feedback__inner">
+          <div class="feedback__inner" id="contact-us">
             <h2 class="feedback__title title">Get in touch with our experts</h2>
             <div class="feedback__content">
               <form class="feedback__form">
@@ -664,7 +664,21 @@
       </div>
       <div class="footer__bottom">
         <div class="container">
-
+          <div class="footer__bottom-inner">
+            <a href="#" class="footer__bottom-logo">
+              <img src="img/logo-white.svg" alt="">
+            </a>
+            <ul class="footer__bottom-links">
+              <li><a class="link" href="#">Home</a></li>
+              <li><a class="link" href="#about-us">About us</a></li>
+              <li><a class="link" href="#services">Services</a></li>
+              <li><a class="link" href="#blog">Blog</a></li>
+              <li><a class="link" href="#contact-us">Contact us</a></li>
+            </ul>
+            <div class="footer__bottom-copy">
+              &copy; Copyright Finsweet 2021
+            </div>
+          </div>
         </div>
       </div>
     </footer>
