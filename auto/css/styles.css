@@ -1000,5 +1000,63 @@ html, body {
   top: 344px;
   transform: translateX(-50%);
   width: 100vw;
-  z-index: 1; /* Позади map__itself */
+  z-index: 1;
 }
+
+/* ------------------------------------------------------------ */
+
+.footer {}
+
+.footer__top {
+  background-color: #1E1B1B;
+}
+
+.footer__top-inner {
+  display: flex;
+  gap: 193px;
+  padding: 128px 0;
+}
+
+.footer__top-col {}
+
+.footer__title {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 140%;
+  max-width: 463px;
+  margin-bottom: 64px;
+}
+
+.footer__top-links {}
+
+.footer__top-link {
+  margin-right: 24px;
+}
+
+.footer__top-link:last-child {
+  margin-right: 0;
+}
+
+.footer__top-subtitle {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 175%;
+  margin-bottom: 8px;
+  opacity: 0.6;
+}
+
+.footer__top-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+
+.footer__top-text:last-child {
+  margin-bottom: 0;
+}
+
+.footer__bottom {}
