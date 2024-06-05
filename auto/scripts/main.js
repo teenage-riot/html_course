@@ -11,9 +11,10 @@ $(function () {
     }
   }, 0);
 
-  $(".burger").on("click", function (e) {
+  $(".burger, .overlay").on("click", function (e) {
     e.preventDefault();
     $(".header__top").toggleClass("header__top--open");
+    $(".overlay").toggleClass("overlay--active");
   });
 
 
