@@ -1,11 +1,28 @@
 // Make sure that the dom is ready
 $(function () {
 
+  // burger 
+
+  setInterval(() => {
+    if ($(window).scrollTop() > 0 && !($(".header__top").hasClass("header__top--open"))) {
+      $(".burger").addClass("burger--follow");
+    } else {
+      $(".burger").removeClass("burger--follow");
+    }
+  }, 0);
+
+  $(".burger").on("click", function (e) {
+    e.preventDefault();
+    $(".header__top").toggleClass("header__top--open");
+  });
+
+
   // video
 
   Fancybox.bind("[data-fancybox]", {
     // Your custom options
   });
+
 
   // rating
 
@@ -74,7 +91,7 @@ $(function () {
     }
   })
 
-  
+
   // map
 
   initMap();
