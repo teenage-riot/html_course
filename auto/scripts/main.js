@@ -18,6 +18,12 @@ $(function () {
     $(".burger").toggleClass("burger--open");
   });
 
+  $(".header__nav-link").on("click", function () {
+    $(".header__top").removeClass("header__top--open");
+    $(".burger").removeClass("burger--open");
+    $(".overlay").removeClass("overlay--active");
+  });
+
 
   // video
 
