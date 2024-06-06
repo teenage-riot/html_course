@@ -1149,9 +1149,6 @@ html, body {
     width: 30px;
     transition: all .3s;
   }
-  .burger__hidden-span {
-    display: none;
-  }
   .burger::before,
   .burger::after {
     background-color: #1e1b1b;
@@ -1169,22 +1166,19 @@ html, body {
     background-color: #fff;
   }
   .burger--open {
-    /* position: relative; */
+    position: fixed;
   }
-  .burger--open::before {
-    /* transform: rotate(45deg); */
+  .burger--open span {
     opacity: 0;
     visibility: hidden;
   }
-  .burger--open::after {
-    transform: rotate(-45deg);
-  }
-  .burger--open span {
+  .burger--open::before {
     position: absolute;
-    transform: rotate(45deg);
-    border-radius: 3px;
-    /* height: 0; */
-    margin: 0;
+    transform: rotate(45deg); 
+  }
+  .burger--open::after {
+    position: absolute;
+    transform: rotate(-45deg); 
   }
   .header {
     padding-top: 93.5px;
