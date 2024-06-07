@@ -244,7 +244,7 @@ html, body {
 .header__title {
   font-size: 64px;
   margin-bottom: 32px;
-  max-width: 600px;
+  width: 624px;
 }
 
 .header__buttons-block {
@@ -489,7 +489,7 @@ html, body {
 
 .we-follow__title {
   margin-bottom: 16px;
-  max-width: 524px;
+  max-width: 564px;
 }
 
 .we-follow__content-text {
@@ -540,13 +540,12 @@ html, body {
   display: flex;
   font-size: 32px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 1.5;
 }
 
 .we-follow__list-text {
   font-size: 18px;
-
-  line-height: 175%;
+  line-height: 1.75;
   max-width: 336px;
   opacity: 0.6;
 }
@@ -1135,7 +1134,7 @@ html, body {
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1170px) {
   .header__title {
     font-size: 48px;
     max-width: 475px;
@@ -1143,6 +1142,37 @@ html, body {
 
   .header__main-img {
     max-width: 450px;
+  }
+
+  /* ------------------------------------------------------------ */
+
+  .we-follow__inner {
+    justify-content: space-between;
+  }
+
+  .we-follow__content {
+    margin-right: 30px;
+  }
+
+  .we-follow__title {
+    font-size: 42px;
+    max-width: 490px;
+  }
+
+  .we-follow__list-number {
+    scale: 0.9;
+  }
+
+  .we-follow__list-title {
+    font-size: 26px;
+  }
+
+  .we-follow__list-decor {
+    scale: 0.5;
+  }
+
+  .we-follow__list-text {
+    font-size: 16px;
   }
 }
 
@@ -1299,7 +1329,7 @@ html, body {
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
   .header__body-inner {
     flex-direction: column;
   }
@@ -1321,6 +1351,20 @@ html, body {
   .header__atop-service {
     margin: 0 50px 0 0;
   }
+
+  /* ------------------------------------------------------------ */
+
+  .we-follow__inner {
+    flex-direction: column;
+  }
+
+  .we-follow__content {
+    margin-bottom: 45px;
+  }
+
+  .we-follow__list {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 740px) {
@@ -1333,19 +1377,48 @@ html, body {
   }
 
   /* ------------------------------------------------------------ */
+
   .header__title {
     font-size: 38px;
     max-width: 375px;
   }
 }
 
+@media (max-width: 500px) {
+  .we-follow__title {
+    font-size: 32px;
+    max-width: 320px;
+  }
 
-@media (max-width: 400px) {
+  .we-follow__list {
+    max-width: 360px;
+  }
+
+  .we-follow__list-number {
+    scale: 0.8;
+  }
+
+  .we-follow__list-title {
+    font-size: 24px;
+  }
+
+  .we-follow__list-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
   .header__top {
     width: 100%;
   }
 
   .header__nav-link {
     padding: 10px;
+  }
+
+  /* ------------------------------------------------------------ */
+
+  .main__offer {
+    margin-top: 45px;
   }
 }
