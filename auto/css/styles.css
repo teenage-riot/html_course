@@ -1418,7 +1418,40 @@ html, body {
 
   /* ------------------------------------------------------------ */
 
+  .header__title {
+    width: auto;
+  }
+
+  .header__buttons-block {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .header__button {
+    margin-bottom: 20px;
+  }
+
+  .header__play-video {
+    margin-left: 0;
+  }
+
+  .header__we-are-open-lower-text {
+    max-width: 180px;
+  }
+
+  /* ------------------------------------------------------------ */
+
   .main__offer {
     margin-top: 45px;
+  }
+}
+
+@media (max-width: 350px) {
+  .header__image-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .header__atop-rating {
+    scale: 0.8;
   }
 }
