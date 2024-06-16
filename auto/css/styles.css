@@ -633,7 +633,11 @@ html, body {
   grid-template: repeat(2, auto) / repeat(5, 1fr);
 }
 
-.brands__grid-item {}
+.brands__grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .brands__logo {}
 
@@ -1118,7 +1122,9 @@ html, body {
   gap: 36px;
 }
 
-/* ------------------------------------------------------------ */
+
+
+/* --------------------------- adaptive ------------------------- */
 
 @media (max-width: 1280px) {
   .header__title {
@@ -1186,6 +1192,12 @@ html, body {
 
   .stats__list-item {
     scale: 0.9;
+  }
+
+  /* ------------------------------------------------------------ */
+
+  .brands__grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   /* ------------------------------------------------------------ */
@@ -1369,6 +1381,12 @@ html, body {
 
   /* ------------------------------------------------------------ */
 
+  .brands__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ------------------------------------------------------------ */
+
   .blog__list {
     grid-template: repeat(2, auto) / repeat(2, 1fr);
   }
@@ -1444,9 +1462,16 @@ html, body {
     padding: 35px 0;
     scale: 0.9;
   }
+
+  /* ------------------------------------------------------------ */
+
+  .brands__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 500px) {
+
   .title {
     font-size: 32px;
   }
@@ -1493,6 +1518,13 @@ html, body {
   }
 
   /* ------------------------------------------------------------ */
+
+  .brands__grid {
+    grid-template: none;
+  }
+
+  /* ------------------------------------------------------------ */
+
   .blog__filter-box {
     margin: 24px 0;
   }
