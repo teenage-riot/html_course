@@ -413,8 +413,8 @@ html, body {
 .offer__button-label {
   display: block;
   font-size: 24px;
-
   line-height: 36px;
+  white-space: nowrap;
 }
 
 .offer__bottom-inscription {
@@ -1127,12 +1127,25 @@ html, body {
 /* --------------------------- adaptive ------------------------- */
 
 @media (max-width: 1280px) {
+  .title {
+    font-size: 46px;
+  }
+
+  /* ------------------------------------------------------------ */
+
   .header__title {
-    font-size: 60px;
+    font-size: 52px;
+    max-width: 515px;
   }
 
   .header__main-img {
     max-width: 550px;
+  }
+
+  /* ------------------------------------------------------------ */
+
+  .we-follow__title {
+    max-width: 520px;
   }
 }
 
@@ -1381,6 +1394,16 @@ html, body {
 
   /* ------------------------------------------------------------ */
 
+  /* .offer__buttons-section {
+    grid-template: repeat(4, auto) / repeat(2, auto);
+  } */
+
+  .offer__button-label {
+    font-size: 20px;
+  }
+
+  /* ------------------------------------------------------------ */
+
   .brands__grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1447,6 +1470,12 @@ html, body {
 
   /* ------------------------------------------------------------ */
 
+  .offer__buttons-section {
+    grid-template: repeat(4, auto) / repeat(2, auto);
+  }
+
+  /* ------------------------------------------------------------ */
+
   .stats__title {
     font-size: 36px;
     max-width: 416px;
@@ -1481,6 +1510,12 @@ html, body {
   .header__title {
     font-size: 38px;
     max-width: 375px;
+  }
+
+  /* ------------------------------------------------------------ */
+
+  .offer__button-label {
+    font-size: 16px;
   }
 
   /* ------------------------------------------------------------ */
