@@ -1443,6 +1443,20 @@ html, body {
   }
 }
 
+@media (max-width: 800px) {
+  .we-follow__inner {
+    flex-direction: column;
+  }
+
+  .we-follow__content {
+    margin: 0 0 45px 0;
+  }
+
+  .we-follow__list {
+    max-width: 400px;
+  }
+}
+
 @media (max-width: 750px) {
   .header {
     padding-top: 45px;
@@ -1456,20 +1470,6 @@ html, body {
 
   .offer__buttons-section {
     grid-template: repeat(4, auto) / repeat(2, auto);
-  }
-
-  /* ------------------------------------------------------------ */
-
-  .we-follow__inner {
-    flex-direction: column;
-  }
-
-  .we-follow__content {
-    margin: 0 0 45px 0;
-  }
-
-  .we-follow__list {
-    max-width: 400px;
   }
 
   /* ------------------------------------------------------------ */
@@ -1520,7 +1520,12 @@ html, body {
 
   .we-follow__title {
     font-size: 32px;
-    max-width: 320px;
+    max-width: 290px;
+    min-width: 0;
+  }
+
+  .we-follow__content-text, .we-follow__list-text {
+    font-size: 14px;
   }
 
   .we-follow__list {
@@ -1532,7 +1537,7 @@ html, body {
   }
 
   .we-follow__list-title {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .we-follow__list-text {
