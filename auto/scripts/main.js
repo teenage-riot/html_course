@@ -65,6 +65,17 @@ $(function () {
     dots: true,
     draggable: false,
     infinite: true,
+    responsive:
+    [
+      {
+        breakpoint: 850,
+        settings: {
+          draggable: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
     slidesToShow: 2,
     slidesToScroll: 2,
   })

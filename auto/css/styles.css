@@ -1143,6 +1143,13 @@ html, body {
   .we-follow__title {
     max-width: 520px;
   }
+
+  /* ------------------------------------------------------------ */
+
+  .customers__title {
+    max-width: 780px;
+    margin-bottom: 62px;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -1233,6 +1240,26 @@ html, body {
 
   .blog__list-subtitle, .blog__list-title {
     margin-bottom: 10px;
+  }
+
+  /* ------------------------------------------------------------ */
+
+  .customers__title {
+    max-width: 700px;
+    margin-bottom: 54px;
+  }
+
+  .customers__slider {
+    margin: 0 -32px;
+  }
+
+  .customers__slide {
+    margin: 0 32px;
+    padding: 50px;
+  }
+
+  .customers__person-name, .customers__slide-text {
+    font-size: 20px;
   }
 }
 
@@ -1455,6 +1482,13 @@ html, body {
   .we-follow__list {
     max-width: 400px;
   }
+
+  /* ------------------------------------------------------------ */
+
+  .customers__arrow {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 750px) {
@@ -1587,6 +1621,25 @@ html, body {
   .blog__list-subtitle, .blog__list-title {
     margin-bottom: 6px;
   }
+  
+  /* ------------------------------------------------------------ */
+
+  .customers__title {
+    margin-bottom: 36px;
+  }
+
+  .customers__person-name, .customers__slide-text {
+    font-size: 16px;
+  }
+
+  .customers__person-city {
+    font-size: 14px;
+  }
+
+  .customer__slider-dots button {
+    height: 24px;
+    width: 24px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1651,5 +1704,12 @@ html, body {
   }
   .header__atop-rating {
     scale: 0.8;
+  }
+
+  /* ------------------------------------------------------------ */
+
+  .customer__slider-dots button {
+    height: 16px;
+    width: 16px;
   }
 }
