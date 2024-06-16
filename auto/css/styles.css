@@ -639,12 +639,8 @@ html, body {
 
 /* ------------------------------------------------------------ */
 
-.blog__title {
-  margin-bottom: 47px;
-}
-
 .blog__filter-box {
-  margin-bottom: 46px;
+  margin: 46px 0;
 }
 
 .blog__filter-btn {
@@ -671,7 +667,7 @@ html, body {
 
 .blog__list-item {
   font-size: 16px;
-  line-height: 28px;
+  line-height: 1.75;
 }
 
 .blog__list-link {
@@ -704,7 +700,7 @@ html, body {
 .blog__list-title {
   font-size: 32px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 1.5;
   margin-bottom: 16px;
   transition: all .7s;
 }
@@ -1126,8 +1122,7 @@ html, body {
 
 @media (max-width: 1280px) {
   .header__title {
-    font-size: 52px;
-    max-width: 515px;
+    font-size: 60px;
   }
 
   .header__main-img {
@@ -1136,6 +1131,12 @@ html, body {
 }
 
 @media (max-width: 1170px) {
+  .title {
+    font-size: 42px;
+  }
+
+  /* ------------------------------------------------------------ */
+
   .header__title {
     font-size: 48px;
     max-width: 475px;
@@ -1185,6 +1186,32 @@ html, body {
 
   .stats__list-item {
     scale: 0.9;
+  }
+
+  /* ------------------------------------------------------------ */
+
+  .blog__filter-box {
+    margin: 32px 0;
+  }
+  
+  .blog__list {
+    gap: 48px 24px;
+  }
+
+  .blog__filter-btn, .blog__list-title {
+    font-size: 26px;
+  }
+
+  .blog__list-item {
+    font-size: 15px;
+  }
+
+  .blog__list-img-box {
+    margin-bottom: 16px;
+  }
+
+  .blog__list-subtitle, .blog__list-title {
+    margin-bottom: 10px;
   }
 }
 
@@ -1339,6 +1366,12 @@ html, body {
   .header__atop-service {
     margin-bottom: 50px;
   }
+
+  /* ------------------------------------------------------------ */
+
+  .blog__list {
+    grid-template: repeat(2, auto) / repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 900px) {
@@ -1414,6 +1447,12 @@ html, body {
 }
 
 @media (max-width: 500px) {
+  .title {
+    font-size: 32px;
+  }
+
+  /* ------------------------------------------------------------ */
+  
   .header__title {
     font-size: 38px;
     max-width: 375px;
@@ -1451,6 +1490,32 @@ html, body {
   .stats__list-item {
     scale: 0.8;
     padding: 25px 0;
+  }
+
+  /* ------------------------------------------------------------ */
+  .blog__filter-box {
+    margin: 24px 0;
+  }
+
+  .blog__list {
+    gap: 32px 0;
+    grid-template: none;
+  }
+
+  .blog__filter-btn, .blog__list-title {
+    font-size: 18px;
+  }
+
+  .blog__list-item {
+    font-size: 14px;
+  }
+
+  .blog__list-img-box {
+    margin-bottom: 10px;
+  }
+
+  .blog__list-subtitle, .blog__list-title {
+    margin-bottom: 6px;
   }
 }
 
