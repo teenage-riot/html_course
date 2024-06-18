@@ -1563,6 +1563,31 @@ html, body {
   .map__back-img {
     display: none;
   }
+
+  /* ------------------------------------------------------------ */
+
+  .footer__top-inner {
+    flex-direction: column;
+    padding: 108px 0;
+  }
+
+  .footer__top-col:first-child {
+    margin-bottom: 45px;
+  }
+
+  .footer__title {
+    margin-bottom: 42px;
+  }
+
+  .footer__top-subtitle {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .footer__top-text {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1844,6 +1869,16 @@ html, body {
     font-size: 18px;
     margin-bottom: 16px;
   }
+
+  /* ------------------------------------------------------------ */
+
+  .footer__top-inner {
+    padding: 84px 0;
+  }
+
+  .footer__title {
+    max-width: 350px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1930,6 +1965,12 @@ html, body {
 
   .feedback__form .button {
     width: 100%;
+  }
+
+  /* ------------------------------------------------------------ */
+
+  .footer__top-links {
+    justify-content: center;
   }
 }
 
