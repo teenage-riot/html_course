@@ -1132,6 +1132,10 @@ html, body {
   gap: 36px;
 }
 
+.footer__bottom-copy {
+  white-space: nowrap;
+}
+
 
 
 /* --------------------------- adaptive ------------------------- */
@@ -1588,6 +1592,14 @@ html, body {
     font-size: 20px;
     margin-bottom: 24px;
   }
+
+  .footer__bottom-inner {
+    padding: 40px;
+  }
+
+  .footer__bottom-links {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1878,6 +1890,14 @@ html, body {
 
   .footer__title {
     max-width: 350px;
+  }
+
+  .footer__bottom-inner {
+    flex-direction: column;
+  }
+
+  .footer__bottom-copy {
+    margin-top: 20px;
   }
 }
 
