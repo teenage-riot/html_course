@@ -113,7 +113,7 @@ html, body {
 
 .wrapper {
   min-height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
 }
 
@@ -621,6 +621,10 @@ html, body {
   background-color: #E2E6E9;
 }
 
+.brands__inner {
+  position: relative;
+}
+
 .brands__title {
   text-align: center;
   margin-bottom: 31px;
@@ -635,6 +639,15 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all .3s;
+}
+
+.brands__grid-item:hover {
+  scale: 1.1;
+}
+
+.brands__grid-item:active {
+  scale: 1.0;
 }
 
 .brands__logo {}
@@ -1214,6 +1227,18 @@ html, body {
 
   .brands__grid {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". a b .";
+  }
+
+  .brands__grid-item:nth-child(9) {
+    grid-area: a;
+  }
+
+  .brands__grid-item:nth-child(10) {
+    grid-area: b;
   }
 
   /* ------------------------------------------------------------ */
@@ -1425,6 +1450,11 @@ html, body {
 
   .brands__grid {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . a"
+    ". b .";
   }
 
   /* ------------------------------------------------------------ */
@@ -1528,6 +1558,11 @@ html, body {
 
   .brands__grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: none
+  }
+
+  .brands__grid-item {
+    grid-area: unset !important;
   }
 }
 
