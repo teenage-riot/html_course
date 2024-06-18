@@ -1027,7 +1027,7 @@ html, body {
 }
 
 .map__itself {
-  height: 512px;
+  height: 640px;
   position: relative;
   width: auto;
   z-index: 2;
@@ -1553,6 +1553,16 @@ html, body {
     font-size: 20px;
     margin-bottom: 24px;
   }
+
+  /* ------------------------------------------------------------ */
+
+  .map__itself {
+    height: 480px;
+  }
+
+  .map__back-img {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1654,6 +1664,12 @@ html, body {
 
   .brands__grid-item {
     grid-area: unset !important;
+  }
+  
+  /* ------------------------------------------------------------ */
+
+  .map__itself {
+    height: 350px;
   }
 }
 
